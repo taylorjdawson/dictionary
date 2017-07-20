@@ -38,21 +38,42 @@ of those sections to manage the look and feel of the site. */
     background: #fff;
 }
 
-.about-section {
+.green-grassing-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
     background: #eee;
 }
 
-.services-section {
+.jobed-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
     background: #fff;
 }
 
-.contact-section {
+.seventh-team-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #eee;
+}
+
+.ten-ninety-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #eee;
+}
+
+.tin-can-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #eee;
+}
+
+.the-past-self-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;

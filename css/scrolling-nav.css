@@ -27,55 +27,76 @@ html {
     }
 }
 
+a.word {
+    color: inherit;
+    text-decoration:  none;
+}
+
+a.word:hover {
+    text-decoration:  none;
+    color: #8c8c8c;
+}
+
+blockquote {
+    font-style: italic;
+    font-family: inherit;
+    font-size: inherit;
+
+}
+
+.usage-green-grassing-body {
+    padding: 2em;
+}
+
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
 The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
 of those sections to manage the look and feel of the site. */
 
 .intro-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 7em;
     text-align: center;
     background: #fff;
 }
 
 .green-grassing-section {
     height: 100%;
-    padding-top: 150px;
-    text-align: center;
+    padding-top: 6em;
+    text-align: left;
     background: #eee;
 }
 
 .jobed-section {
     height: 100%;
-    padding-top: 150px;
-    text-align: center;
+    padding-top: 6em;
+    text-align: left;
     background: #fff;
 }
 
 .seventh-team-section {
     height: 100%;
-    padding-top: 150px;
-    text-align: center;
+    padding-top: 6em;
+    text-align: left;
     background: #eee;
 }
 
 .ten-ninety-section {
     height: 100%;
-    padding-top: 150px;
-    text-align: center;
-    background: #eee;
+    padding-top: 6em;
+    text-align: left;
+    background: #fff;
 }
 
 .tin-can-section {
     height: 100%;
-    padding-top: 150px;
-    text-align: center;
+    padding-top: 6em;
+    text-align: left;
     background: #eee;
 }
 
 .the-past-self-section {
     height: 100%;
-    padding-top: 150px;
-    text-align: center;
-    background: #eee;
+    padding-top: 6em;
+    text-align: left;
+    background: #fff;
 }

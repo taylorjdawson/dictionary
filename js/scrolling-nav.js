@@ -8,6 +8,9 @@ $(window).scroll(function() {
 });
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin
+function test(){
+    $(".navbar-collapse").collapse('hide');
+}
 $(function() {
     $(document).on('click', 'a.page-scroll', function(event) {
         var $anchor = $(this);
@@ -15,5 +18,6 @@ $(function() {
             scrollTop: $($anchor.attr('href')).offset().top
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
+        $(".navbar-collapse").collapse('hide');
     });
 });

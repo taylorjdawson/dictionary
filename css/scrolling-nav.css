@@ -70,41 +70,45 @@ of those sections to manage the look and feel of the site. */
     min-height: 100%;
     height: initial;
     padding-top: 6em;
-    padding-bottom:1em;
     text-align: left;
     background: #eee;
 }
 
 .jobed-section {
-    height: 100%;
+    min-height: 100%;
+    height: initial;
     padding-top: 6em;
     text-align: left;
     background: #fff;
 }
 
 .the-seventh-team-section {
-    height: 100%;
+    min-height: 100%;
+    height: initial;
     padding-top: 6em;
     text-align: left;
     background: #eee;
 }
 
 .ten-ninety-section {
-    height: 100%;
+    min-height: 100%;
+    height: initial;
     padding-top: 6em;
     text-align: left;
     background: #fff;
 }
 
 .tin-can-section {
-    height: 100%;
+    min-height: 100%;
+    height: initial;
     padding-top: 6em;
     text-align: left;
     background: #eee;
 }
 
 .the-past-self-section {
-    height: 100%;
+    min-height: 100%;
+    height: initial;
     padding-top: 6em;
     text-align: left;
     background: #fff;

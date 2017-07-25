@@ -1,0 +1,75 @@
+<% for (var i = 0, len = entries.length; i < len; i++) { %>
+    <%
+        word_lc = entries[i].word.toLowerCase().replace(/\s/g, '-');
+        word = entries[i].word;
+        definition = entries[i].definition;
+        origin = entries[i].origin;
+        usage = entries[i].usage;
+        example = entries[i].example;
+    %>
+    <!-- <%=word%> Entry -->
+    <section id="<%=word_lc%>" class="<%=word_lc%>-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12" id="<%=word_lc%>-accordion">
+
+                    <!--Word-->
+                    <h1><%=word%></h1>
+
+                    <!--Definition-->
+                    <blockquote>
+                        <%-definition%>
+                    </blockquote>
+
+                    <!--Origin-->
+                    <div class="panel custom">
+
+                        <!--Origin Title Text-->
+                        <h1><a class="word" data-toggle="collapse" data-parent="#<%=word_lc%>-accordion"
+                               href="#origin-<%=word_lc%>" aria-expanded="true"
+                               aria-controls="origin-<%=word_lc%>">Origin</a></h1>
+
+                        <!--Origin Body Text-->
+                        <div id="origin-<%=word_lc%>" class="collapse" style="padding:0;">
+                            <div class="origin-<%=word_lc%>-body well">
+                                <%-origin%>
+                            </div>
+                        </div>
+                    </div><br>
+
+                    <!--Usage-->
+                    <div class="panel custom">
+
+                        <!--Usage Title Text-->
+                        <h1><a class="word" data-toggle="collapse" data-parent="#<%=word_lc%>-accordion"
+                               href="#usage-<%=word_lc%>" aria-expanded="true"
+                               aria-controls="usage-<%=word_lc%>">Usage</a></h1>
+
+                        <!--Usage Body Text-->
+                        <div id="usage-<%=word_lc%>" class="collapse" style="padding:0;">
+                            <div class="usage-<%=word_lc%>-body well">
+                                <%-usage%>
+                            </div>
+                        </div>
+                    </div><br>
+
+                    <!--Example-->
+                    <div class="panel custom">
+
+                        <!--Example Title Text-->
+                        <h1><a class="word" data-toggle="collapse" data-parent="#<%=word_lc%>-accordion"
+                               href="#examp-<%=word_lc%>" aria-expanded="true"
+                               aria-controls="examp-<%=word_lc%>">Example</a></h1>
+
+                        <!--Example Body Text-->
+                        <div id="examp-<%=word_lc%>" class="collapse" style="padding:0;">
+                            <div class="examp-<%=word_lc%> well">
+                                <%-example%>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<% } %>

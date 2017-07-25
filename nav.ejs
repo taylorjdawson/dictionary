@@ -1,0 +1,11 @@
+<ul class="nav navbar-nav">
+    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+    <li class="hidden">
+        <a class="page-scroll" href="#page-top"></a>
+    </li>
+    <% for (var i = 0, len = words.length; i < len; i++) { %>
+    <li>
+        <a class="page-scroll" href="#<%=words[i].toLowerCase().replace(/\s/g, '-')%>"><%=words[i]%></a>
+    </li>
+    <% } %>
+</ul>

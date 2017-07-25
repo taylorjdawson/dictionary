@@ -20,14 +20,14 @@
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
 </head>
-
-<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
-
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Navigation -->
@@ -43,29 +43,40 @@
                 <a class="navbar-brand page-scroll" href="#page-top">Dawsonisms</a>
             </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <!-- Collect the nav.ejs links, forms, and other content for toggling -->
+            <div id="nav-items" class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a class="page-scroll" href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#green-grassing">Green&ndash;grassing</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#jobed">Jobed</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#seventh-team">Seventh Team</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#ten-ninety">Ten-ninety</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#tin-can">Tin-can</a>
-                    </li>
-                </ul>
+    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+    <li class="hidden">
+        <a class="page-scroll" href="#page-top"></a>
+    </li>
+    
+    <li>
+        <a class="page-scroll" href="#green-grass">Green-grass</a>
+    </li>
+    
+    <li>
+        <a class="page-scroll" href="#jobed">Jobed</a>
+    </li>
+    
+    <li>
+        <a class="page-scroll" href="#the-seventh-team">The Seventh Team</a>
+    </li>
+    
+    <li>
+        <a class="page-scroll" href="#ten-ninety">Ten-ninety</a>
+    </li>
+    
+    <li>
+        <a class="page-scroll" href="#tin-can">Tin-can</a>
+    </li>
+    
+    <li>
+        <a class="page-scroll" href="#the-past-self">The Past Self</a>
+    </li>
+    
+</ul>
+
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -85,134 +96,409 @@
         </div>
     </section>
 
-    <!-- Green-grassing Section -->
-    <section id="green-grassing" class="green-grassing-section">
+    
+    
+    <!-- Green-grass Entry -->
+    <section id="green-grass" class="green-grass-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <h1>Green&ndash;grassing
-                    </h1>
-                    <br>
-                    <h1>
-                        <a class="word" data-toggle="collapse" href="#origin-green-grassing" aria-expanded="true">
-                            Origin
-                        </a>
-                    </h1>
-                    <div id="origin-green-grassing" class="collapse" style="padding:0;">
-                        <div class="usage-green-grassing-body well">
-                            <p><i>"Fertilior seges est alieno semper in arvo"&ndash;Erasmus of Rotterdam</i></p>
-                            <br>
-                            <P>You are most likely familiar with the phrase "The grass is always greener".
-                                The latin quote above is the origination of this phrase which was published in English translation by Richard Taverner in 1545 and went as follows:</P>
-                            <BLOCKQUOTE>
-                                "The corne in an other man’s ground semeth euer more fertyll and plentifull then doth oure owne."
-                            </BLOCKQUOTE>
-                            <p>
-                                What I have done is verbalize the phrase.
-                            </p>
-                        </div>
-                    </div>
-                    <br>
-                    <h1>
-                        <a class="word" data-toggle="collapse" href="#usage-green-grassing" aria-expanded="true">
-                            Usage
-                        </a>
-                    </h1>
-                    <div id="usage-green-grassing" class="collapse" style="padding:0;">
-                        <div class="usage-green-grassing-body well">
-                            To say someone is green–grassing, means that they are discontent with what they
-                            currently posses (i.e. a job, car, plans, spouse, etc.) and are looking and/or hoping to
-                            find something bette
-                        </div>
-                    </div>
-                    <br>
-                    <h1>
-                        <a class="word" for="examp-green-grassing" data-toggle="collapse" href="#examp-green-grassing" aria-expanded="true">
-                            Examples
-                        </a>
-                    </h1>
-                    <div id="examp-green-grassing" class="collapse" style="padding:0;">
-                        <div class="examp-green-grassing-body well">
+                <div class="col-lg-12" id="green-grass-accordion">
 
+                    <!--Word-->
+                    <h1>Green-grass</h1>
+
+                    <!--Definition-->
+                    <blockquote>
+                        v. To actviely think about abandoing one's current position or choice, with the hopes of acheiveing something better.
+                    </blockquote>
+
+                    <!--Origin-->
+                    <div class="panel custom">
+
+                        <!--Origin Title Text-->
+                        <h1><a class="word" data-toggle="collapse" data-parent="#green-grass-accordion"
+                               href="#origin-green-grass" aria-expanded="true"
+                               aria-controls="origin-green-grass">Origin</a></h1>
+
+                        <!--Origin Body Text-->
+                        <div id="origin-green-grass" class="collapse" style="padding:0;">
+                            <div class="origin-green-grass-body well">
+                                <blockquote>"Fertilior seges est alieno semper in arvo"&ndash;Erasmus of Rotterdam</blockquote> <br> <P>You are most likely familiar with the phrase "The grass is always greener". The latin quote above is the origination of this phrase which was published in English translation by Richard Taverner in 1545 and went as follows:</P><BLOCKQUOTE>"The corne in an other man’s ground semeth euer more fertyll and plentifull then doth oure owne."</BLOCKQUOTE><p>What I have done is verbalize the phrase.</p>
+                            </div>
+                        </div>
+                    </div><br>
+
+                    <!--Usage-->
+                    <div class="panel custom">
+
+                        <!--Usage Title Text-->
+                        <h1><a class="word" data-toggle="collapse" data-parent="#green-grass-accordion"
+                               href="#usage-green-grass" aria-expanded="true"
+                               aria-controls="usage-green-grass">Usage</a></h1>
+
+                        <!--Usage Body Text-->
+                        <div id="usage-green-grass" class="collapse" style="padding:0;">
+                            <div class="usage-green-grass-body well">
+                                To say someone is green–grassing, means that they are discontent with what they currently posses (i.e. a job, car, plans, spouse, etc.) and are looking and/or hoping to find something better.
+                            </div>
+                        </div>
+                    </div><br>
+
+                    <!--Example-->
+                    <div class="panel custom">
+
+                        <!--Example Title Text-->
+                        <h1><a class="word" data-toggle="collapse" data-parent="#green-grass-accordion"
+                               href="#examp-green-grass" aria-expanded="true"
+                               aria-controls="examp-green-grass">Example</a></h1>
+
+                        <!--Example Body Text-->
+                        <div id="examp-green-grass" class="collapse" style="padding:0;">
+                            <div class="examp-green-grass well">
+                                An example would go here.
+                            </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
     </section>
 
+    
     <!-- Jobed Entry -->
     <section id="jobed" class="jobed-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12" id="jobed-accordion">
+
+                    <!--Word-->
                     <h1>Jobed</h1>
-                    <p><i>Based off of the Bible passage: Job 1-2</i></p>
-                    <br>
-                    <p>
-                         <br> When Everything in your life is going amazing and then suddenly and inexplicably it goes terribly terribly wrong…
-                    </p>
+
+                    <!--Definition-->
+                    <blockquote>
+                        v. When everything in your life is going amazing and then suddenly and inexplicably it goes terribly terribly wrong.
+                    </blockquote>
+
+                    <!--Origin-->
+                    <div class="panel custom">
+
+                        <!--Origin Title Text-->
+                        <h1><a class="word" data-toggle="collapse" data-parent="#jobed-accordion"
+                               href="#origin-jobed" aria-expanded="true"
+                               aria-controls="origin-jobed">Origin</a></h1>
+
+                        <!--Origin Body Text-->
+                        <div id="origin-jobed" class="collapse" style="padding:0;">
+                            <div class="origin-jobed-body well">
+                                Based off of the Bible passage: <a href="https://www.biblegateway.com/passage/?search=Job+1-2&version=ESV" target="_blank">Job 1-2</a>
+                            </div>
+                        </div>
+                    </div><br>
+
+                    <!--Usage-->
+                    <div class="panel custom">
+
+                        <!--Usage Title Text-->
+                        <h1><a class="word" data-toggle="collapse" data-parent="#jobed-accordion"
+                               href="#usage-jobed" aria-expanded="true"
+                               aria-controls="usage-jobed">Usage</a></h1>
+
+                        <!--Usage Body Text-->
+                        <div id="usage-jobed" class="collapse" style="padding:0;">
+                            <div class="usage-jobed-body well">
+                                To identify situations when calamity has befallen someone with a seemingly posh life.
+                            </div>
+                        </div>
+                    </div><br>
+
+                    <!--Example-->
+                    <div class="panel custom">
+
+                        <!--Example Title Text-->
+                        <h1><a class="word" data-toggle="collapse" data-parent="#jobed-accordion"
+                               href="#examp-jobed" aria-expanded="true"
+                               aria-controls="examp-jobed">Example</a></h1>
+
+                        <!--Example Body Text-->
+                        <div id="examp-jobed" class="collapse" style="padding:0;">
+                            <div class="examp-jobed well">
+                                My kids and I were living a very happy life until my ex-wife jobed me by calling CPS and having them taken away.
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Seventh Team Entry -->
-    <section id="seventh-team" class="seventh-team-section">
+    
+    <!-- The Seventh Team Entry -->
+    <section id="the-seventh-team" class="the-seventh-team-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12" id="the-seventh-team-accordion">
+
+                    <!--Word-->
                     <h1>The Seventh Team</h1>
-                    <br>
-                    <p>
-                        The concept of <i>The Seventh Team</i>. This whole idea was created around the following scenario.
-                        There was a programing contest that was to be held. Emails were sent out to all of the Computer
-                        Science students stating that those interested were to assemble teams and reply with a list of
-                        the team members. Within days, all of the six team slots were filled. But then something occurred.
-                        A seventh team responded. Now under normal and fair circumstances, this team should have been denied entry.
-                        But what happened instead is that the professors sent out an email stating that they would
-                        review the teams over the weekend and decide which team would be removed. Thus was born, <i>The Seventh Team</i>.
-                    </p>
+
+                    <!--Definition-->
+                    <blockquote>
+                        n. Anyone who, whether advertently or not, deprives the deserved privileges of another. A person or entity that spoils the earned goods of another.
+                    </blockquote>
+
+                    <!--Origin-->
+                    <div class="panel custom">
+
+                        <!--Origin Title Text-->
+                        <h1><a class="word" data-toggle="collapse" data-parent="#the-seventh-team-accordion"
+                               href="#origin-the-seventh-team" aria-expanded="true"
+                               aria-controls="origin-the-seventh-team">Origin</a></h1>
+
+                        <!--Origin Body Text-->
+                        <div id="origin-the-seventh-team" class="collapse" style="padding:0;">
+                            <div class="origin-the-seventh-team-body well">
+                                The concept of The Seventh Team was created around the ensuing scenario. There was a programing contest that was to be held. Emails were sent out to all of the Computer Science students stating that those interested were to assemble teams and reply with a list of the team members along with a team name. Within days, all of the six team slots were filled. But then something occurred. A seventh team responded. Now, under normal and fair circumstances, this team should have been denied entry. But what happened instead is that the professors sent out an email stating that they would review the teams over the weekend and decide which team would be removed. Thus was born, The Seven Team.
+                            </div>
+                        </div>
+                    </div><br>
+
+                    <!--Usage-->
+                    <div class="panel custom">
+
+                        <!--Usage Title Text-->
+                        <h1><a class="word" data-toggle="collapse" data-parent="#the-seventh-team-accordion"
+                               href="#usage-the-seventh-team" aria-expanded="true"
+                               aria-controls="usage-the-seventh-team">Usage</a></h1>
+
+                        <!--Usage Body Text-->
+                        <div id="usage-the-seventh-team" class="collapse" style="padding:0;">
+                            <div class="usage-the-seventh-team-body well">
+                                A situation where someone is deprived of their proper privileges because the presence of another. A scenario where a consumed public good is regurgitated and given to another.
+                            </div>
+                        </div>
+                    </div><br>
+
+                    <!--Example-->
+                    <div class="panel custom">
+
+                        <!--Example Title Text-->
+                        <h1><a class="word" data-toggle="collapse" data-parent="#the-seventh-team-accordion"
+                               href="#examp-the-seventh-team" aria-expanded="true"
+                               aria-controls="examp-the-seventh-team">Example</a></h1>
+
+                        <!--Example Body Text-->
+                        <div id="examp-the-seventh-team" class="collapse" style="padding:0;">
+                            <div class="examp-the-seventh-team well">
+                                A concert is sold out. All of the seats are filled. But then some tardy people forced their way into the auditorium. The ushers, upon realizing this, stop the concert, require a mass exodus, and then reshuffle everyone so that those who were in their seats are not guaranteed to get their seats back.
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Ten-Ninety Section -->
+    
+    <!-- Ten-ninety Entry -->
     <section id="ten-ninety" class="ten-ninety-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <h1>Ten-Nintey</h1>
-                    <br>
+                <div class="col-lg-12" id="ten-ninety-accordion">
 
+                    <!--Word-->
+                    <h1>Ten-ninety</h1>
+
+                    <!--Definition-->
+                    <blockquote>
+                        adj. Comments or statements that are primarliy facetious yet carry an underliing senserity whether the person is aware or not.
+                    </blockquote>
+
+                    <!--Origin-->
+                    <div class="panel custom">
+
+                        <!--Origin Title Text-->
+                        <h1><a class="word" data-toggle="collapse" data-parent="#ten-ninety-accordion"
+                               href="#origin-ten-ninety" aria-expanded="true"
+                               aria-controls="origin-ten-ninety">Origin</a></h1>
+
+                        <!--Origin Body Text-->
+                        <div id="origin-ten-ninety" class="collapse" style="padding:0;">
+                            <div class="origin-ten-ninety-body well">
+                                The exact origin of this term is unknown although it quite possible that it stems from this common phrase: <blockquote>There's a grain of truth in every joke.</blockquote>
+                            </div>
+                        </div>
+                    </div><br>
+
+                    <!--Usage-->
+                    <div class="panel custom">
+
+                        <!--Usage Title Text-->
+                        <h1><a class="word" data-toggle="collapse" data-parent="#ten-ninety-accordion"
+                               href="#usage-ten-ninety" aria-expanded="true"
+                               aria-controls="usage-ten-ninety">Usage</a></h1>
+
+                        <!--Usage Body Text-->
+                        <div id="usage-ten-ninety" class="collapse" style="padding:0;">
+                            <div class="usage-ten-ninety-body well">
+                                The term <i>ten-ninety</i> represents the ratio, 10% serious, 90% joking, and openly asserts the hidden implications of someone's remark.
+                            </div>
+                        </div>
+                    </div><br>
+
+                    <!--Example-->
+                    <div class="panel custom">
+
+                        <!--Example Title Text-->
+                        <h1><a class="word" data-toggle="collapse" data-parent="#ten-ninety-accordion"
+                               href="#examp-ten-ninety" aria-expanded="true"
+                               aria-controls="examp-ten-ninety">Example</a></h1>
+
+                        <!--Example Body Text-->
+                        <div id="examp-ten-ninety" class="collapse" style="padding:0;">
+                            <div class="examp-ten-ninety well">
+                                Alice: "I think " <br> Bob: "Ten-ninety" <br> Alice: [smurks]
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Tin-can Section -->
+    
+    <!-- Tin-can Entry -->
     <section id="tin-can" class="tin-can-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <h1>Tin-can</h1>
-                    <p><i>It is frustrating to have discovered a new author and not to be able to tell anyone how good
-                        he is; to come suddenly, at the turn of the road, upon some mountain valley of unexpected
-                        grandeur and then to have to keep silent because the people with you care for it no more
-                        than for a tin can in the ditch;</i></p>
-                    <br>
-                    <p>
+                <div class="col-lg-12" id="tin-can-accordion">
 
-                    </p>
+                    <!--Word-->
+                    <h1>Tin-can</h1>
+
+                    <!--Definition-->
+                    <blockquote>
+                        v. To share enthusiastically with a person something that you care about only to be blatantly disregarded.
+                    </blockquote>
+
+                    <!--Origin-->
+                    <div class="panel custom">
+
+                        <!--Origin Title Text-->
+                        <h1><a class="word" data-toggle="collapse" data-parent="#tin-can-accordion"
+                               href="#origin-tin-can" aria-expanded="true"
+                               aria-controls="origin-tin-can">Origin</a></h1>
+
+                        <!--Origin Body Text-->
+                        <div id="origin-tin-can" class="collapse" style="padding:0;">
+                            <div class="origin-tin-can-body well">
+                                The term is based off of the following quote:<br><blockquote>It is frustrating to have discovered a new author and not to be able to tell anyone how good he is; to come suddenly, at the turn of the road, upon some mountain valley of unexpected grandeur and then to have to keep silent because the people with you care for it no more than for a tin can in the ditch;<br>&mdash;C. S. Lewis</blockquote>
+                            </div>
+                        </div>
+                    </div><br>
+
+                    <!--Usage-->
+                    <div class="panel custom">
+
+                        <!--Usage Title Text-->
+                        <h1><a class="word" data-toggle="collapse" data-parent="#tin-can-accordion"
+                               href="#usage-tin-can" aria-expanded="true"
+                               aria-controls="usage-tin-can">Usage</a></h1>
+
+                        <!--Usage Body Text-->
+                        <div id="usage-tin-can" class="collapse" style="padding:0;">
+                            <div class="usage-tin-can-body well">
+                                To explain to someone a situation where your comment was rejected. It can also be a way to inform the person who just tin-canned you, of their insensitive actions.
+                            </div>
+                        </div>
+                    </div><br>
+
+                    <!--Example-->
+                    <div class="panel custom">
+
+                        <!--Example Title Text-->
+                        <h1><a class="word" data-toggle="collapse" data-parent="#tin-can-accordion"
+                               href="#examp-tin-can" aria-expanded="true"
+                               aria-controls="examp-tin-can">Example</a></h1>
+
+                        <!--Example Body Text-->
+                        <div id="examp-tin-can" class="collapse" style="padding:0;">
+                            <div class="examp-tin-can well">
+                                Charles: "Did you know you can see the ISS fly by tonight!" <br> Dave: "Cool."
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    
+    <!-- The Past Self Entry -->
+    <section id="the-past-self" class="the-past-self-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12" id="the-past-self-accordion">
+
+                    <!--Word-->
+                    <h1>The Past Self</h1>
+
+                    <!--Definition-->
+                    <blockquote>
+                        n. One's past state that one dissociates from presenting them as nearly another person, so to say, upon whom one may cast their sins.
+                    </blockquote>
+
+                    <!--Origin-->
+                    <div class="panel custom">
+
+                        <!--Origin Title Text-->
+                        <h1><a class="word" data-toggle="collapse" data-parent="#the-past-self-accordion"
+                               href="#origin-the-past-self" aria-expanded="true"
+                               aria-controls="origin-the-past-self">Origin</a></h1>
+
+                        <!--Origin Body Text-->
+                        <div id="origin-the-past-self" class="collapse" style="padding:0;">
+                            <div class="origin-the-past-self-body well">
+                                It just came to me.
+                            </div>
+                        </div>
+                    </div><br>
+
+                    <!--Usage-->
+                    <div class="panel custom">
+
+                        <!--Usage Title Text-->
+                        <h1><a class="word" data-toggle="collapse" data-parent="#the-past-self-accordion"
+                               href="#usage-the-past-self" aria-expanded="true"
+                               aria-controls="usage-the-past-self">Usage</a></h1>
+
+                        <!--Usage Body Text-->
+                        <div id="usage-the-past-self" class="collapse" style="padding:0;">
+                            <div class="usage-the-past-self-body well">
+                                In discussion to meaningfully descibe when a person tries to disown themselves from themselves in an effort to mask current sins or issues.
+                            </div>
+                        </div>
+                    </div><br>
+
+                    <!--Example-->
+                    <div class="panel custom">
+
+                        <!--Example Title Text-->
+                        <h1><a class="word" data-toggle="collapse" data-parent="#the-past-self-accordion"
+                               href="#examp-the-past-self" aria-expanded="true"
+                               aria-controls="examp-the-past-self">Example</a></h1>
+
+                        <!--Example Body Text-->
+                        <div id="examp-the-past-self" class="collapse" style="padding:0;">
+                            <div class="examp-the-past-self well">
+                                In The Office. Michael Scott, ferociously bitter because he didn’t get to be santa for the office Christmas party, dressed up as Jesus. This is as a child would do; when they are denied a position or object that they desire, they proceed to create a new title/role/object, fictitious or not, then declare it to have a greater significance than that which they were unable to have. Thus, this is what Michael was doing. But then once he had thoroughly annoyed everyone as Jesus to the point at which he completely ruined the party, he returned from his office as just “Michael”. Then when accused of his past behavior he said that it wasn’t him that it was “ ..hurt, petulant Jesus”.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
@@ -222,5 +508,4 @@
     <script src="js/scrolling-nav.js"></script>
 
 </body>
-
 </html>

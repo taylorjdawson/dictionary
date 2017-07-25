@@ -816,7 +816,7 @@ if (typeof jQuery === 'undefined') {
     clearMenus()
 
     if (!isActive) {
-      if ('ontouchstart' in document.documentElement && !$parent.closest('.navbar-nav').length) {
+      if ('ontouchstart' in document.documentElement && !$parent.closest('.navbar-nav.ejs').length) {
         // if mobile we use a backdrop because click events don't delegate
         $(document.createElement('div'))
           .addClass('dropdown-backdrop')
@@ -1903,7 +1903,7 @@ if (typeof jQuery === 'undefined') {
     this.$body          = $(document.body)
     this.$scrollElement = $(element).is(document.body) ? $(window) : $(element)
     this.options        = $.extend({}, ScrollSpy.DEFAULTS, options)
-    this.selector       = (this.options.target || '') + ' .nav li > a'
+    this.selector       = (this.options.target || '') + ' .nav.ejs li > a'
     this.offsets        = []
     this.targets        = []
     this.activeTarget   = null
